@@ -1,43 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package intheritanceorm;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-/**
- *
- * @author sonon
- */
 public class IntheritanceORM {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        FulltimeEmployee emp1 = new FulltimeEmployee();
-        ParttimeEmployee emp2 = new ParttimeEmployee();
+        FulltimeEmployee emp1 = new FulltimeEmployee(); //emp1 is Fulltime
+        ParttimeEmployee emp2 = new ParttimeEmployee(); //emp2 is Parttime
         
-        EmployeeTable.insertEmployee(emp1);
-        //emp1.setName("PANGPOND");
-        //emp1.setSalary(5000);
-        //emp2.setName("NAHEE");
+        //EmployeeTable.insertEmployee(emp1); //don't Comment Code when you want insert 
+        //emp1.setName("Charanpat");
+        //emp1.setSalary(25000);
+        //emp2.setName("Chotirat");
         //emp2.setHoursWork(8);
         
-        //EmployeeTable.updateFullTimeEmployee(emp1);
-        //emp1.setName("PANGPOND");
-        //emp1.setSalary(5000);
+        //EmployeeTable.updateFullTimeEmployee(emp1); //don't Comment Code when you want update FullTime
+        //emp1.setName("PADKAPAO");
+        //emp1.setSalary(30000);
         
-        //EmployeeTable.updatePartTimeEmployee(emp2);
-        //emp2.setName("NAHEE");
+        //EmployeeTable.updatePartTimeEmployee(emp2); //don't Comment Code when you want update PastTime
+        //emp2.setName("PADPIKGANG");
         //emp2.setHoursWork(8);
         
-        //EmployeeTable.removeFullTimeEmployee(emp1);
-        //EmployeeTable.removePartTimeEmployee(emp2);
+        //EmployeeTable.removeFullTimeEmployee(emp1); //don't Comment Code when you want remove FullTime
+        //EmployeeTable.removePartTimeEmployee(emp2); //don't Comment Code when you want remove PastTime
     }
 
     public static void persist(Object object) {
